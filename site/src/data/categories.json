@@ -1,0 +1,19 @@
+[
+  {
+    "id": "example-category",
+    "title": "카테고리 이름 (예: 프로덕트 기획)",
+    "summary": "이 카테고리에서 맡았던 역할을 한 줄로 요약",
+    "items": [
+      {
+        "title": "업무/프로젝트 이름",
+        "period": "2022.03 - 2023.06",
+        "role": "담당 역할 (예: 기획 리드)",
+        "description": "무엇을 했고 어떤 성과가 있었는지 설명하는 부분입니다.",
+        "links": [
+          { "label": "관련 링크 이름", "url": "https://example.com" }
+        ],
+        "images": []
+      }
+    ]
+  }
+]
