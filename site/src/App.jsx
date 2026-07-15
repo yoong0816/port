@@ -15,7 +15,11 @@ function WorkItem({ item }) {
       {item.images?.length > 0 && (
         <div className="image-grid">
           {item.images.map((src, i) => (
-            <img key={i} src={src} alt={`${item.title} 이미지 ${i + 1}`} />
+            <img
+              key={i}
+              src={`${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`}
+              alt={`${item.title} 이미지 ${i + 1}`}
+            />
           ))}
         </div>
       )}
@@ -25,7 +29,7 @@ function WorkItem({ item }) {
           {item.links.map((link, i) => (
             <li key={i}>
               <a href={link.url} target="_blank" rel="noreferrer">
-                {link.label}
+                {link.label} ↗
               </a>
             </li>
           ))}
@@ -53,13 +57,28 @@ function App() {
   return (
     <div className="page">
       <header className="intro">
-        <h1>{intro.name}</h1>
-        <p className="headline">{intro.headline}</p>
+        <p className="eyebrow">PORTFOLIO</p>
+        <h1>{intro.headline}</h1>
+        <p className="name">{intro.name}</p>
+
         {intro.paragraphs?.map((p, i) => (
           <p key={i} className="intro-paragraph">
             {p}
           </p>
         ))}
+
+        <div className="contact-row">
+          {intro.contact?.email && (
+            <a className="chip" href={`mailto:${intro.contact.email}`}>
+              ✉ {intro.contact.email}
+            </a>
+          )}
+          {intro.contact?.links?.map((link, i) => (
+            <a key={i} className="chip" href={link.url} target="_blank" rel="noreferrer">
+              {link.label}
+            </a>
+          ))}
+        </div>
       </header>
 
       <nav className="category-nav">
@@ -68,12 +87,35 @@ function App() {
             {c.title}
           </a>
         ))}
+        {intro.values?.length > 0 && <a href="#values">가치관</a>}
       </nav>
 
       <main>
         {categories.map((category) => (
           <CategorySection key={category.id} category={category} />
         ))}
+
+        {intro.values?.length > 0 && (
+          <section className="category-section" id="values">
+            <h2>가치관</h2>
+            <ul className="values-list">
+              {intro.values.map((v, i) => (
+                <li key={i}>{v}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {intro.education?.length > 0 && (
+          <footer className="education">
+            <h2>학력</h2>
+            <ul>
+              {intro.education.map((e, i) => (
+                <li key={i}>{e}</li>
+              ))}
+            </ul>
+          </footer>
+        )}
       </main>
     </div>
   )
