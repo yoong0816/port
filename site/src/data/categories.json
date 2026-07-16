@@ -1,48 +1,138 @@
 [
   {
-    "id": "content-planning",
-    "title": "음반 · 콘텐츠 기획",
-    "summary": "아티스트 음반 제작부터 팬 콘텐츠, 공연·기업 행사 진행까지 기획하고 실행했습니다.",
+    "id": "album-concert",
+    "title": "음반 및 공연 기획",
+    "summary": "탑클라우드엔터테인먼트에서 아티스트 음반 제작과 일본 콘서트·팬 행사를 기획하고 진행했습니다.",
     "items": [
       {
         "title": "싱글 앨범 [커플(Couple)] 기획 및 발매",
         "period": "2020.12 - 2022.05",
         "role": "탑클라우드엔터테인먼트 · 기획팀 대리",
-        "description": "음반 프로덕션 전 단계(기획, MV 제작 회의, 녹음 스케줄링, 유통사 소통, 심의 및 저작권 등록 업무)를 직접 수행하며 음반 제작 프로세스 전반에 대한 이해를 쌓았습니다. 팬클럽 키트와 아티스트 굿즈 제작도 콘셉트 수립부터 디자인 의뢰, 수량·가격 결정까지 주도했습니다.",
+        "description": [
+          "음반 프로덕션 전 단계(기획, MV 제작 회의, 녹음 스케줄링, 유통사 소통, 심의 및 저작권 등록 업무)를 직접 수행하며 음반 제작 프로세스 전반에 대한 이해를 쌓았습니다.",
+          "팬클럽 키트와 아티스트 굿즈 제작의 콘셉트 수립부터 디자인 의뢰, 수량·가격 결정까지 주도했습니다.",
+          "아티스트의 프로필 및 티저 이미지, 앨범 컷을 검토 및 컨펌했습니다."
+        ],
         "links": [
           { "label": "멜론에서 듣기", "url": "https://www.melon.com/album/detail.htm?albumId=10618301" }
         ],
-        "images": ["/images/couple-single.jpg"]
+        "images": ["/images/couple-single.jpg", "/images/topcloud-logo.png"]
+      },
+      {
+        "title": "'커플(Couple)' MV 제작",
+        "period": "2020.12 - 2022.05",
+        "role": "탑클라우드엔터테인먼트 · 기획팀 대리",
+        "description": "티저 기획, 제작 회의(참여), 의상 콘셉트 수립(참여)에 이어 MV 촬영 현장 보조를 담당했습니다. MV 비하인드 콘텐츠도 직접 기획하고 촬영했습니다.",
+        "links": [
+          { "label": "MV 비하인드 보기", "url": "https://youtu.be/EdNruFMcw6U" }
+        ],
+        "images": ["/images/couple-mv-capture.png"]
       },
       {
         "title": "일본 콘서트 · 팬 특전회 기획 및 진행",
         "period": "2020.12 - 2022.05",
         "role": "탑클라우드엔터테인먼트 · 기획팀 대리",
-        "description": "아티스트 스케줄링과 공식 SNS 관리를 병행하며, 일본 현지(도쿄·오사카) 콘서트와 팬 특전회를 기획하고 현장에서 직접 진행했습니다.",
-        "links": [],
-        "images": ["/images/topcloud-event.jpg", "/images/topcloud-logo.png"]
+        "description": "아티스트 스케줄링을 병행하며, 일본 현지(도쿄·오사카) 콘서트와 팬 특전회를 기획하고 현장에서 직접 진행했습니다.",
+        "links": [
+          { "label": "관련 자료 보기", "url": "https://drive.google.com/file/d/11SkPtnMfOTxBqRSIEsLqvT-uvxYNAPU4/view?usp=drivesdk" }
+        ],
+        "images": []
       },
       {
-        "title": "축제 · 기업 행사 기획 및 현장 운영",
-        "period": "2022.12 - 2026.06 (얼터 → 문화콘텐츠 조직 개편·기업 분사, 동일 직무 연속 수행)",
-        "role": "주식회사 얼터 / 문화콘텐츠 · 문화사업팀 선임",
-        "description": "축제 기획부터 운영, 현장 진행을 총괄했고, HD현대건설기계·수산세보틱스·다림바이오텍 등 기업의 SNS 브랜딩을 담당했습니다. 기업 행사 기획 및 현장 진행, 조국혁신당 김재원 국회의원실 관련 업무도 수행했습니다.",
+        "title": "아티스트 공식 SNS 관리",
+        "period": "",
+        "role": "탑클라우드엔터테인먼트 · 기획팀 대리",
+        "description": "트위터, 인스타그램, 유튜브, 틱톡 등 아티스트 공식 SNS 채널과 회사 메일을 담당하여 거래처 및 팬과의 커뮤니케이션 창구 역할을 수행했습니다.",
         "links": [],
-        "images": ["/images/alter-event.jpg"]
+        "images": []
+      },
+      {
+        "title": "아티스트(LAM) 유튜브 일본어 자막 담당",
+        "period": "2020.12 - 2022.05",
+        "role": "탑클라우드엔터테인먼트 · 기획팀 대리",
+        "description": "아티스트 공식 유튜브 채널의 콘텐츠에 일본어 자막 작업을 담당했습니다.",
+        "links": [],
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": "content-planning",
+    "title": "콘텐츠 기획",
+    "summary": "주식회사 얼터 / 문화콘텐츠에서 기업 브랜딩, SNS, 축제·행사 콘텐츠를 기획하고 운영했습니다.",
+    "categoryPeriod": "2022.12 - 2026.06 (얼터 → 문화콘텐츠 조직 개편·기업 분사, 동일 직무 연속 수행)",
+    "items": [
+      {
+        "title": "축제 기획, 운영 및 현장 진행",
+        "period": "",
+        "role": "주식회사 얼터 / 문화콘텐츠 · 문화사업팀 선임",
+        "description": [
+          "축제 기획부터 운영, 현장 진행까지 참여했습니다.",
+          "2026 양재천벚꽃등축제 : 기획안 작성, 홍보 및 후원 제안서 제작, 출연진 섭외 및 소통, 무대 보조, 결과보고서 작성",
+          "제1회 서천해양레저페스타 : 기획안 작성, 포스터 및 자료집 제작, 현장 답사 및 섭외, 결과보고서 작성",
+          "K-Festival & 트래블쇼 2025 : 회사 자체 부스 기획 및 운영, 인쇄물 제작"
+        ],
+        "links": [
+          { "label": "2026 양재천벚꽃등축제", "url": "https://drive.google.com/file/d/1TzE9BIEqdU7BjZDk_WCJqXzN2SBFhQ8T/view?usp=sharing" },
+          { "label": "제1회 서천해양레저페스타", "url": "https://drive.google.com/file/d/1IAu5SuzS-Yr2xnkADdxXaWJucEGKmHY4/view?usp=sharing" }
+        ],
+        "images": []
+      },
+      {
+        "title": "기업 SNS 브랜딩",
+        "period": "",
+        "role": "주식회사 얼터 / 문화콘텐츠 · 문화사업팀 선임",
+        "description": [
+          "HD현대건설기계, 수산세보틱스, 다림바이오텍 등 기업의 공식 SNS 채널 브랜딩을 담당했습니다.",
+          "유튜브, 인스타그램, 페이스북, 링크드인 등 기획 및 운영",
+          "게시물 및 유튜브 썸네일 제작",
+          "구글애즈 등 광고 진행",
+          "게시물 일정 및 댓글 관리",
+          "월간 운영보고서 작성",
+          "2년 이상 업무 진행 (재계약)"
+        ],
+        "links": [
+          { "label": "월간 운영보고서 예시", "url": "https://drive.google.com/file/d/1UR9hgG9RcGZiy5OPDE77pSh38OfVGcJk/view?usp=sharing" }
+        ],
+        "images": []
+      },
+      {
+        "title": "기업 행사 기획 및 현장 진행",
+        "period": "",
+        "role": "주식회사 얼터 / 문화콘텐츠 · 문화사업팀 선임",
+        "description": [
+          "기업 행사 기획부터 현장 진행까지 수행했습니다.",
+          "한수테크니컬 송년회",
+          "성균관대학교 대학원 IMBA OT",
+          "CEO&PARTNERS 송년회, 신년회 등 그 외"
+        ],
+        "links": [],
+        "images": []
+      },
+      {
+        "title": "조국혁신당 김재원국회의원실 업무",
+        "period": "",
+        "role": "주식회사 얼터 / 문화콘텐츠 · 문화사업팀 선임",
+        "description": "월간 의정보고와 카드뉴스 등의 웹디자인과, 의원실 명함·현수막·배너 등의 인쇄물을 기획 및 제작했습니다.",
+        "links": [
+          { "label": "월간 의정보고 예시1", "url": "https://drive.google.com/file/d/1icBY0aLw92oxBLHOrye0g0MRIPdG-xUz/view?usp=sharing" },
+          { "label": "월간 의정보고 예시2", "url": "https://drive.google.com/file/d/1Im8LPQEgQU0VjyGWbidvA6omntRNQoNz/view?usp=sharing" }
+        ],
+        "images": []
       }
     ]
   },
   {
     "id": "writing-editing",
     "title": "글쓰기 · 에디팅",
-    "summary": "블로그, 브런치, 매체 에디터로 활동하며 꾸준히 음악에 대한 글을 써왔습니다.",
+    "summary": "블로그, 브런치스토리, 매체 에디터로 활동하며 꾸준히 음악에 대한 글을 써왔습니다.",
     "items": [
       {
         "title": "케이팝 리뷰 · 분석 블로그 운영",
         "period": "2018 - 현재",
         "role": "네이버 블로그 운영자",
         "description": "케이팝 리뷰와 분석을 중심으로 블로그를 꾸준히 운영하고 있습니다.",
-        "links": [{ "label": "네이버 블로그", "url": "https://blog.naver.com/mogi_best" }],
+        "links": [{ "label": "네이버 블로그", "url": "https://blog.naver.com/PostList.naver?blogId=mogi_best&from=postList&categoryNo=11" }],
         "images": []
       },
       {
@@ -50,15 +140,15 @@
         "period": "2022.03 - 현재",
         "role": "브런치스토리 · 필진 (활동명: 융)",
         "description": "음악 리뷰 블로거들끼리 만든 국내/해외 음악 리뷰 채널입니다. 해외 팝을 자주 듣는 습관을 기르기 위해 시작했고, 활동 이후 더 분석적으로 음악을 듣게 되었습니다.",
-        "links": [{ "label": "브런치스토리", "url": "https://brunch.co.kr/@gomment" }],
+        "links": [{ "label": "브런치스토리", "url": "https://brunch.co.kr/@gomment/284" }],
         "images": []
       },
       {
         "title": "ZAPZEE Curated Playlist 에디터",
-        "period": "2020 - 현재 (월 2회)",
+        "period": "2020 - (월 2회)",
         "role": "ZAPZEE · 에디터 (필명: Yoon)",
-        "description": "ZAPZEE의 Curated Playlist 코너에서 필명 Yoon으로 큐레이션 및 에디팅 업무를 담당하고 있습니다.",
-        "links": [{ "label": "ZAPZEE Originals", "url": "https://zapzee.net/category/zapzee-originals/curated-playlist/" }],
+        "description": "ZAPZEE의 Curated Playlist 코너에서 필명 Yoon으로 큐레이션 및 에디팅 업무를 담당했습니다.",
+        "links": [{ "label": "ZAPZEE Originals", "url": "https://zapzee.net/2022/12/29/curated-playlist-10-best-k-pop-songs-of-2022/" }],
         "images": []
       }
     ]
@@ -72,7 +162,7 @@
         "title": "JLPT N1 취득",
         "period": "2025.08.12",
         "role": "일본어 능력시험 최고 등급",
-        "description": "일본어능력시험(JLPT) N1을 취득했습니다.",
+        "description": "성인이 된 후 일본어 능력이 엔터테인먼트 업무에 큰 도움이 될 것이라 판단하여, JLPT N2와 N1을 순차적으로 취득했습니다.",
         "links": [],
         "images": []
       },
@@ -80,7 +170,7 @@
         "title": "도쿄 워킹홀리데이 · 공연 회사 업무",
         "period": "2019.08 - 2020.02",
         "role": "도쿄",
-        "description": "도쿄에서 워킹홀리데이 기간 중 공연 회사에서 실무 경험을 쌓았습니다.",
+        "description": "도쿄 워킹홀리데이 기간 중 공연 회사에서 아티스트의 공연 일정과 홍보 일정을 수립하고, 팬미팅 및 특전회를 운영하며 실무 경험을 쌓았습니다.",
         "links": [],
         "images": []
       },
@@ -89,14 +179,6 @@
         "period": "2020.12 - 2022.05",
         "role": "도쿄, 오사카",
         "description": "일본 현지 공연과 팬 특전회 현장 진행을 담당했습니다.",
-        "links": [],
-        "images": []
-      },
-      {
-        "title": "아티스트(LAM) 유튜브 일본어 자막 담당",
-        "period": "탑클라우드엔터테인먼트 재직 중",
-        "role": "일본어 자막 담당",
-        "description": "아티스트 공식 유튜브 채널의 콘텐츠에 일본어 자막 작업을 담당했습니다.",
         "links": [],
         "images": []
       }
@@ -117,7 +199,7 @@
           { "label": "팟빵", "url": "https://dlink.podbbang.com/0054b014" },
           { "label": "스포티파이", "url": "https://open.spotify.com/show/1DopCKz7B0rHbnR5iPZlUv?si=3274667fd7164d22" }
         ],
-        "images": []
+        "images": ["/images/podcast-banner.jpg"]
       },
       {
         "title": "임창정 16집 타이틀 선정단 청음회 초청",
@@ -125,7 +207,7 @@
         "role": "예스아이엠엔터테인먼트 · 초청 청음단",
         "description": "블로그의 임창정 관련 포스팅을 보고 예스아이엠엔터테인먼트에서 초청해주었습니다. 아직 발매되지 않은 음원들을 듣고 의견을 보탤 수 있었던, 글쓰기와 음악 리뷰에 큰 보람을 느낀 순간이었습니다.",
         "links": [],
-        "images": ["/images/imchangjung-listening.jpg"]
+        "images": ["/images/imchangjung-group.jpg", "/images/imchangjung-invite.jpg"]
       },
       {
         "title": "이즘(IZM) 뮤직 아카데미 수강 - 키워드로 K-POP DIVE",
