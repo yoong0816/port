@@ -31,6 +31,7 @@ body {
 }
 
 .site-nav-name {
+  flex-shrink: 0;
   font-weight: 800;
   color: #1f2b24;
   text-decoration: none;
@@ -41,10 +42,12 @@ body {
 .site-nav-links {
   display: flex;
   gap: 18px;
+  min-width: 0;
   overflow-x: auto;
 }
 
 .site-nav-links a {
+  flex-shrink: 0;
   color: #6f8a7d;
   text-decoration: none;
   font-size: 0.88rem;

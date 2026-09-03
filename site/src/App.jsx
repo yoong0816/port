@@ -1,6 +1,9 @@
-import intro from './data/intro.json'
+import introBase from './data/intro-base.json'
+import introKpop from './data/intro-kpop.json'
 import categories from './data/categories.json'
 import './App.css'
+
+const defaultIntro = { ...introBase, ...introKpop }
 
 function imgSrc(src) {
   return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
@@ -84,7 +87,7 @@ function CategorySection({ category }) {
   )
 }
 
-function App() {
+function App({ intro = defaultIntro }) {
   const navItems = [
     ...categories.map((c) => ({ id: c.id, title: c.title })),
     ...(intro.interests?.length > 0 ? [{ id: 'interests', title: '관심 분야' }] : []),
