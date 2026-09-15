@@ -9,6 +9,10 @@ function imgSrc(src) {
   return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
 }
 
+function linkHref(url) {
+  return /^https?:\/\//.test(url) ? url : imgSrc(url)
+}
+
 function DescriptionLine({ text }) {
   const idx = text.indexOf(' : ')
   if (idx === -1) return text
@@ -56,11 +60,28 @@ function WorkItem({ item }) {
           item.description && <p className="description">{item.description}</p>
         )}
 
+        {item.reportLinks?.length > 0 && (
+          <div className="report-thumb-list">
+            {item.reportLinks.map((link, i) => (
+              <a
+                key={i}
+                className="report-thumb"
+                href={linkHref(link.url)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={imgSrc(link.thumbnail)} alt={`${link.label} 미리보기`} />
+                <span>{link.label} ↗</span>
+              </a>
+            ))}
+          </div>
+        )}
+
         {item.links?.length > 0 && (
           <ul className="link-list">
             {item.links.map((link, i) => (
               <li key={i}>
-                <a href={link.url} target="_blank" rel="noreferrer">
+                <a href={linkHref(link.url)} target="_blank" rel="noreferrer">
                   {link.label} ↗
                 </a>
               </li>

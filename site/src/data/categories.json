@@ -24,7 +24,7 @@
         "role": "탑클라우드엔터테인먼트 · 기획팀 대리",
         "description": "티저 기획, 제작 회의(참여), 의상 콘셉트 수립(참여)에 이어 MV 촬영 현장 보조를 담당했습니다. MV 비하인드 콘텐츠도 직접 기획하고 촬영했습니다.",
         "links": [
-          { "label": "MV 비하인드 보기", "url": "https://youtu.be/EdNruFMcw6U" }
+          { "label": "MV 바로가기", "url": "https://youtu.be/Fjnzxy6F90A?si=tOIzaZImT-D5cLE2" }
         ],
         "images": ["/images/couple-mv-capture.png"]
       },
@@ -69,13 +69,16 @@
         "description": [
           "축제 기획부터 운영, 현장 진행까지 참여했습니다.",
           "2026 양재천벚꽃등축제 : 기획안 작성, 홍보 및 후원 제안서 제작, 출연진 섭외 및 소통, 무대 보조, 결과보고서 작성",
+          "10명 이상의 실무자 중 단독으로 공연 및 무대프로그램을 담당했습니다.",
           "제1회 서천해양레저페스타 : 기획안 작성, 포스터 및 자료집 제작, 현장 답사 및 섭외, 결과보고서 작성",
+          "10명 이상의 실무자 중 단독으로 현장 답사 및 섭외를 담당했습니다.",
           "K-Festival & 트래블쇼 2025 : 회사 자체 부스 기획 및 운영, 인쇄물 제작"
         ],
-        "links": [
-          { "label": "2026 양재천벚꽃등축제", "url": "https://drive.google.com/file/d/1TzE9BIEqdU7BjZDk_WCJqXzN2SBFhQ8T/view?usp=sharing" },
-          { "label": "제1회 서천해양레저페스타", "url": "https://drive.google.com/file/d/1IAu5SuzS-Yr2xnkADdxXaWJucEGKmHY4/view?usp=sharing" }
+        "reportLinks": [
+          { "label": "양재천벚꽃등축제 결과보고서", "url": "/docs/yangjaecheon-festival-report.pdf", "thumbnail": "/images/yangjaecheon-report-thumb.jpg" },
+          { "label": "서천해양레저페스타 결과보고서", "url": "https://drive.google.com/file/d/1IAu5SuzS-Yr2xnkADdxXaWJucEGKmHY4/view?usp=sharing", "thumbnail": "/images/seocheon-report-thumb.jpg" }
         ],
+        "links": [],
         "images": []
       },
       {
@@ -132,7 +135,7 @@
         "period": "2018 - 현재",
         "role": "네이버 블로그 운영자",
         "description": "케이팝 리뷰와 분석을 중심으로 블로그를 꾸준히 운영하고 있습니다.",
-        "links": [{ "label": "네이버 블로그", "url": "https://blog.naver.com/PostList.naver?blogId=mogi_best&from=postList&categoryNo=11" }],
+        "links": [{ "label": "네이버 블로그", "url": "https://blog.naver.com/mogi_best/223338204834" }],
         "images": []
       },
       {
@@ -145,7 +148,7 @@
       },
       {
         "title": "ZAPZEE Curated Playlist 에디터",
-        "period": "2020 - (월 2회)",
+        "period": "2020 - 2023.01 (월 2회)",
         "role": "ZAPZEE · 에디터 (필명: Yoon)",
         "description": "ZAPZEE의 Curated Playlist 코너에서 필명 Yoon으로 큐레이션 및 에디팅 업무를 담당했습니다.",
         "links": [{ "label": "ZAPZEE Originals", "url": "https://zapzee.net/2022/12/29/curated-playlist-10-best-k-pop-songs-of-2022/" }],
@@ -170,7 +173,7 @@
         "title": "도쿄 워킹홀리데이 · 공연 회사 업무",
         "period": "2019.08 - 2020.02",
         "role": "도쿄",
-        "description": "도쿄 워킹홀리데이 기간 중 공연 회사에서 아티스트의 공연 일정과 홍보 일정을 수립하고, 팬미팅 및 특전회를 운영하며 실무 경험을 쌓았습니다.",
+        "description": "일본 도쿄에서 워킹홀리데이로 체류했습니다. 다른 일반적인 아르바이트보다 공연이나 음악과 관련된 실무 경험을 쌓는 게 도움이 될 것 같아서 공연 회사에 지원하였고, 주 5-6일을 근무했습니다. 아티스트의 공연 일정과 제반을 관리하고, 공연 홍보, 팬미팅 및 특전회 기획을 담당했습니다. 가장 뿌듯한 경험은 공연 및 특전회에서 일본어로 현장을 진행한 점입니다. 스태프, 헤어메이크업팀, 팬들과 외국어로 소통하며 현장을 이끈 경험은 해외에서만 할 수 있는 일이기 때문에 지금까지도 저의 큰 자산으로 남아있습니다.",
         "links": [],
         "images": []
       },
@@ -230,6 +233,14 @@
         "period": "2018.05 - 2018.07",
         "role": "출연",
         "description": "연예부 기자들의 유튜브를 보다가 K-POP과 엔터 산업에 대해 이야기하고 싶은 내용을 정리해 연락했고, 승낙을 받아 콘텐츠 촬영에 참여했습니다. 생각을 정리해 명확하게 말하는 연습이 되었습니다.",
+        "links": [],
+        "images": []
+      },
+      {
+        "title": "개인 음원 발매 (진행중)",
+        "period": "2026년 내 발매 예정",
+        "role": "개인 프로젝트",
+        "description": "곡 제작과 녹음 프로세스, 작사 및 보컬 연습, 유통과 발매에 이르기까지의 과정을 '아티스트'로서도 경험해보고 싶어 개인 음원 발매를 준비중입니다.",
         "links": [],
         "images": []
       }
