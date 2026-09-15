@@ -14,7 +14,7 @@
           "아티스트의 프로필 및 티저 이미지, 앨범 컷을 검토 및 컨펌했습니다."
         ],
         "links": [
-          { "label": "멜론에서 듣기", "url": "https://www.melon.com/album/detail.htm?albumId=10618301" }
+          { "label": "앨범 정보", "url": "https://www.melon.com/album/detail.htm?albumId=10618301" }
         ],
         "images": ["/images/couple-single.jpg", "/images/topcloud-logo.png"]
       },
