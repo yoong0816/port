@@ -1,9 +1,25 @@
+import { useEffect, useState } from 'react'
 import introBase from './data/intro-base.json'
 import introKpop from './data/intro-kpop.json'
 import categories from './data/categories.json'
 import './App.css'
 
 const defaultIntro = { ...introBase, ...introKpop }
+
+// 화면(screen)이 넓을 때만 true. 모바일·인쇄(PDF)에서는 false.
+const WIDE_QUERY = 'screen and (min-width: 651px)'
+
+function useWide() {
+  const [wide, setWide] = useState(() => window.matchMedia(WIDE_QUERY).matches)
+  useEffect(() => {
+    const mq = window.matchMedia(WIDE_QUERY)
+    const onChange = () => setWide(mq.matches)
+    mq.addEventListener('change', onChange)
+    onChange()
+    return () => mq.removeEventListener('change', onChange)
+  }, [])
+  return wide
+}
 
 function imgSrc(src) {
   return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
@@ -94,16 +110,40 @@ function WorkItem({ item }) {
 }
 
 function CategorySection({ category }) {
+  const wide = useWide()
+  // featuredFirst: 첫 항목은 가로 전체로, 나머지는 아래에 왼쪽·오른쪽 번갈아 배치
+  const featured = category.featuredFirst ? category.items[0] : null
+  const rest = featured ? category.items.slice(1) : category.items
+
   return (
     <section className="category-section" id={category.id}>
       <h2>{category.title}</h2>
       {category.summary && <p className="category-summary">{category.summary}</p>}
       {category.categoryPeriod && <p className="category-period">{category.categoryPeriod}</p>}
-      <div className="work-item-list">
-        {category.items.map((item, i) => (
-          <WorkItem key={i} item={item} />
-        ))}
-      </div>
+      {featured && (
+        <div className="work-item-featured">
+          <WorkItem item={featured} />
+        </div>
+      )}
+      {featured && wide ? (
+        <div className="work-item-columns">
+          {[0, 1].map((col) => (
+            <div className="work-item-col" key={col}>
+              {rest
+                .filter((_, i) => i % 2 === col)
+                .map((item) => (
+                  <WorkItem key={item.title} item={item} />
+                ))}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="work-item-list">
+          {rest.map((item, i) => (
+            <WorkItem key={i} item={item} />
+          ))}
+        </div>
+      )}
     </section>
   )
 }

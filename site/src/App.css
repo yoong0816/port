@@ -185,6 +185,18 @@ main {
   }
 }
 
+/* featuredFirst 카테고리: 아래 항목들을 왼쪽·오른쪽 두 줄로 번갈아 쌓기 */
+.work-item-columns {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.work-item-col {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .work-item {
   background: #ffffff;
   border: 1px solid #d9ebe3;
