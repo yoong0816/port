@@ -270,11 +270,24 @@ function App({ intro = defaultIntro }) {
 
         {intro.summary && <p className="summary">{intro.summary}</p>}
 
-        {intro.paragraphs?.map((p, i) => (
-          <p key={i} className="intro-paragraph">
-            {p}
-          </p>
-        ))}
+        {intro.paragraphs?.length > 0 && (
+          <details className="intro-more">
+            <summary>
+              <span className="intro-more-label when-closed">자기소개서 전체 보기</span>
+              <span className="intro-more-label when-open">자기소개서 접기</span>
+              <span className="intro-more-chevron" aria-hidden="true">
+                ▾
+              </span>
+            </summary>
+            <div className="intro-more-body">
+              {intro.paragraphs.map((p, i) => (
+                <p key={i} className="intro-paragraph">
+                  {p}
+                </p>
+              ))}
+            </div>
+          </details>
+        )}
 
         <div className="contact-row">
           {intro.contact?.email && (

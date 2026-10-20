@@ -117,6 +117,83 @@ body {
   max-width: 62ch;
 }
 
+/* 자기소개서 전체 보기: 눌러서 아래로 펼치는 긴 글 */
+.intro-more {
+  margin-bottom: 18px;
+}
+
+.intro-more > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #a8dcc3;
+  color: #1f7a52;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: background 0.15s;
+}
+
+.intro-more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.intro-more > summary:hover {
+  background: #dcf1e7;
+}
+
+.intro-more > summary:focus-visible {
+  outline: 2px solid #2f9e6f;
+  outline-offset: 3px;
+}
+
+.intro-more .when-open,
+.intro-more[open] .when-closed {
+  display: none;
+}
+
+.intro-more[open] .when-open {
+  display: inline;
+}
+
+.intro-more-chevron {
+  transition: transform 0.2s;
+}
+
+.intro-more[open] .intro-more-chevron {
+  transform: rotate(180deg);
+}
+
+.intro-more-body {
+  margin-top: 16px;
+  animation: intro-more-in 0.28s ease-out;
+}
+
+@keyframes intro-more-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media print {
+  .intro-more > summary {
+    display: none;
+  }
+  .intro-more-body {
+    animation: none;
+    margin-top: 0;
+  }
+}
+
 .contact-row {
   display: flex;
   flex-wrap: wrap;
