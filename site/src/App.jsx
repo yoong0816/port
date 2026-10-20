@@ -306,7 +306,9 @@ function App({ intro = defaultIntro }) {
       <main>
         {categories.map((category) => (
           <Fragment key={category.id}>
-            <CategorySection category={category} />
+            <CategorySection
+              category={{ ...category, ...intro.categoryOverrides?.[category.id] }}
+            />
             {category.id === 'content-planning' && <WorksPrintSection />}
           </Fragment>
         ))}
