@@ -1,0 +1,84 @@
+{
+  "title": "작업물 모아보기",
+  "summary": "그동안 작업한 기획안 · 제안서 · 보고서를 모았어요. 항목을 누르면 PDF가 열립니다.",
+  "items": [
+    {
+      "title": "[다림바이오텍] 콘텐츠 제작 및 디지털채널 운영계획안",
+      "description": "14페이지",
+      "file": "/docs/works/darim-content-channel-plan.pdf",
+      "thumbnail": "/images/works/darim-content-channel-plan.jpg"
+    },
+    {
+      "title": "[다림바이오텍] SNS 콘텐츠 운영안",
+      "description": "10페이지",
+      "file": "/docs/works/darim-sns-content-plan.pdf",
+      "thumbnail": "/images/works/darim-sns-content-plan.jpg"
+    },
+    {
+      "title": "[수산세보틱스] 공모전 기획안",
+      "description": "6페이지",
+      "file": "/docs/works/susan-robotics-contest-plan.pdf",
+      "thumbnail": "/images/works/susan-robotics-contest-plan.jpg"
+    },
+    {
+      "title": "[화이트런드리] 제작협찬제안서",
+      "description": "15페이지",
+      "file": "/docs/works/whitelaundry-sponsorship-proposal.pdf",
+      "thumbnail": "/images/works/whitelaundry-sponsorship-proposal.jpg"
+    },
+    {
+      "title": "[조이보드] 한손게이밍컨트롤러 개발사업 계획서",
+      "description": "46페이지",
+      "file": "/docs/works/joyboard-controller-business-plan.pdf",
+      "thumbnail": "/images/works/joyboard-controller-business-plan.jpg"
+    },
+    {
+      "title": "[제8회 양재천벚꽃등축제] 후원 협찬 제안서",
+      "description": "7페이지",
+      "file": "/docs/works/yangjaecheon-sponsorship-proposal.pdf",
+      "thumbnail": "/images/works/yangjaecheon-sponsorship-proposal.jpg"
+    },
+    {
+      "title": "[제8회 양재천벚꽃등축제] AI체험 홍보부스 참여 제안서",
+      "description": "5페이지",
+      "file": "/docs/works/yangjaecheon-ai-booth-proposal.pdf",
+      "thumbnail": "/images/works/yangjaecheon-ai-booth-proposal.jpg"
+    },
+    {
+      "title": "[제1회 서천해양레저페스타] 무대 및 시스템 운영 결과보고",
+      "description": "12페이지",
+      "file": "/docs/works/seocheon-stage-system-report.pdf",
+      "thumbnail": "/images/works/seocheon-stage-system-report.jpg"
+    },
+    {
+      "title": "[제1회 서천해양레저페스타] 홍보물, 디자인 및 제작 결과보고",
+      "description": "9페이지",
+      "file": "/docs/works/seocheon-promo-design-report.pdf",
+      "thumbnail": "/images/works/seocheon-promo-design-report.jpg"
+    },
+    {
+      "title": "[수산중공업] 디지털채널 운영 제안서",
+      "description": "14페이지",
+      "file": "/docs/works/susan-heavy-digital-channel-proposal.pdf",
+      "thumbnail": "/images/works/susan-heavy-digital-channel-proposal.jpg"
+    },
+    {
+      "title": "[주식회사 문화콘텐츠] 회사소개서",
+      "description": "28페이지",
+      "file": "/docs/works/company-introduction.pdf",
+      "thumbnail": "/images/works/company-introduction.jpg"
+    },
+    {
+      "title": "[TV조선] '新성공시대 마이웨이' 제안서",
+      "description": "10페이지",
+      "file": "/docs/works/tvchosun-myway-proposal.pdf",
+      "thumbnail": "/images/works/tvchosun-myway-proposal.jpg"
+    },
+    {
+      "title": "[미나페르호넨] AI 도슨트 적용 결과 보고서",
+      "description": "9페이지",
+      "file": "/docs/works/minaperhonen-ai-docent-report.pdf",
+      "thumbnail": "/images/works/minaperhonen-ai-docent-report.jpg"
+    }
+  ]
+}

@@ -61,9 +61,12 @@
     "title": "콘텐츠 기획",
     "summary": "주식회사 얼터 / 문화콘텐츠에서 기업 브랜딩, SNS, 축제·행사 콘텐츠를 기획하고 운영했습니다.",
     "categoryPeriod": "2022.12 - 2026.06 (얼터 → 문화콘텐츠 조직 개편·기업 분사, 동일 직무 연속 수행)",
+    "featuredFirst": true,
+    "restLayout": "balanced",
     "items": [
       {
         "title": "축제 기획, 운영 및 현장 진행",
+        "showWorksButton": true,
         "period": "",
         "role": "주식회사 얼터 / 문화콘텐츠 · 문화사업팀 선임",
         "description": [
@@ -76,8 +79,7 @@
         ],
         "reportLinks": [
           { "label": "양재천벚꽃등축제 결과보고서", "url": "/docs/yangjaecheon-festival-report.pdf", "thumbnail": "/images/yangjaecheon-report-thumb.jpg" },
-          { "label": "서천해양레저페스타 운영기획안", "url": "/docs/seocheon-operation-plan.pdf", "thumbnail": "/images/seocheon-plan-thumb.jpg" },
-          { "label": "서천해양레저페스타 결과보고서", "url": "https://drive.google.com/file/d/1IAu5SuzS-Yr2xnkADdxXaWJucEGKmHY4/view?usp=sharing", "thumbnail": "/images/seocheon-report-thumb.jpg" }
+          { "label": "서천해양레저페스타 운영기획안", "url": "/docs/seocheon-operation-plan.pdf", "thumbnail": "/images/seocheon-plan-thumb.jpg" }
         ],
         "links": [],
         "images": []

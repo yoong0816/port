@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import introBase from './data/intro-base.json'
 import introKpop from './data/intro-kpop.json'
 import categories from './data/categories.json'
+import works from './data/works.json'
 import './App.css'
 
 const defaultIntro = { ...introBase, ...introKpop }
@@ -27,6 +28,82 @@ function imgSrc(src) {
 
 function linkHref(url) {
   return /^https?:\/\//.test(url) ? url : imgSrc(url)
+}
+
+const hasWorks = works.items?.length > 0
+
+// "다른 작업물 보기" 버튼: 작업물 목록 팝업 열기
+function openWorks() {
+  const dlg = document.getElementById('works-dialog')
+  if (dlg && !dlg.open) dlg.showModal()
+}
+
+function WorksList() {
+  return (
+    <ul className="works-list">
+      {works.items.map((w, i) => (
+        <li key={i}>
+          <a className="works-row" href={linkHref(w.file)} target="_blank" rel="noreferrer">
+            {w.thumbnail && <img src={imgSrc(w.thumbnail)} alt={`${w.title} 미리보기`} />}
+            <span className="works-row-text">
+              <strong>{w.title}</strong>
+              {w.description && <em>{w.description}</em>}
+            </span>
+            <span className="works-row-open">열기 ↗</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+// 화면에서는 팝업(dialog)으로만 보이고, 인쇄·PDF에서는 아래 WorksPrintSection으로 대신 보임
+function WorksDialog() {
+  const ref = useRef(null)
+  if (!hasWorks) return null
+  return (
+    <dialog
+      ref={ref}
+      id="works-dialog"
+      className="works-dialog"
+      aria-labelledby="works-dialog-title"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) e.currentTarget.close()
+      }}
+    >
+      <div className="works-dialog-inner">
+        <header className="works-dialog-header">
+          <div>
+            <h2 id="works-dialog-title">
+              {works.title}
+              <span className="works-count">{works.items.length}개</span>
+            </h2>
+            {works.summary && <p>{works.summary}</p>}
+          </div>
+          <button
+            type="button"
+            className="works-dialog-close"
+            aria-label="닫기"
+            onClick={() => ref.current.close()}
+          >
+            ✕
+          </button>
+        </header>
+        <WorksList />
+      </div>
+    </dialog>
+  )
+}
+
+function WorksPrintSection() {
+  if (!hasWorks) return null
+  return (
+    <section className="category-section works-print">
+      <h2>{works.title}</h2>
+      {works.summary && <p className="category-summary">{works.summary}</p>}
+      <WorksList />
+    </section>
+  )
 }
 
 function DescriptionLine({ text }) {
@@ -93,15 +170,22 @@ function WorkItem({ item }) {
           </div>
         )}
 
-        {item.links?.length > 0 && (
+        {(item.links?.length > 0 || (item.showWorksButton && hasWorks)) && (
           <ul className="link-list">
-            {item.links.map((link, i) => (
+            {item.links?.map((link, i) => (
               <li key={i}>
                 <a href={linkHref(link.url)} target="_blank" rel="noreferrer">
                   {link.label} ↗
                 </a>
               </li>
             ))}
+            {item.showWorksButton && hasWorks && (
+              <li>
+                <button type="button" className="works-link" onClick={openWorks}>
+                  다른 작업물 보기
+                </button>
+              </li>
+            )}
           </ul>
         )}
       </div>
@@ -111,9 +195,12 @@ function WorkItem({ item }) {
 
 function CategorySection({ category }) {
   const wide = useWide()
-  // featuredFirst: 첫 항목은 가로 전체로, 나머지는 아래에 왼쪽·오른쪽 번갈아 배치
+  // featuredFirst: 첫 항목은 가로 전체로 놓고, 나머지는 아래에 두 줄로 배치
+  //  - 기본: 왼쪽·오른쪽 번갈아 배치
+  //  - restLayout: "balanced" 이면 두 줄의 높이가 비슷해지도록 자동으로 나눔
   const featured = category.featuredFirst ? category.items[0] : null
   const rest = featured ? category.items.slice(1) : category.items
+  const alternate = featured && wide && category.restLayout !== 'balanced'
 
   return (
     <section className="category-section" id={category.id}>
@@ -125,7 +212,7 @@ function CategorySection({ category }) {
           <WorkItem item={featured} />
         </div>
       )}
-      {featured && wide ? (
+      {alternate ? (
         <div className="work-item-columns">
           {[0, 1].map((col) => (
             <div className="work-item-col" key={col}>
@@ -205,7 +292,10 @@ function App({ intro = defaultIntro }) {
 
       <main>
         {categories.map((category) => (
-          <CategorySection key={category.id} category={category} />
+          <Fragment key={category.id}>
+            <CategorySection category={category} />
+            {category.id === 'content-planning' && <WorksPrintSection />}
+          </Fragment>
         ))}
 
         {intro.interests?.length > 0 && (
@@ -248,6 +338,8 @@ function App({ intro = defaultIntro }) {
           </footer>
         )}
       </main>
+
+      <WorksDialog />
     </div>
   )
 }
