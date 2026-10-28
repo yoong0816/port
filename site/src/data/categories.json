@@ -79,7 +79,7 @@
           "K-Festival & 트래블쇼 2025 : 회사 자체 부스 기획 및 운영, 인쇄물 제작"
         ],
         "reportLinks": [
-          { "label": "양재천벚꽃축제 제안서", "url": "https://docs.google.com/presentation/d/17PP7AkN6o57G8yx9uZ5Wrr6SQ63hpHGfXgrLIIDi34g/edit?usp=sharing", "thumbnail": "/images/yangjaecheon-proposal-thumb.jpg" },
+          { "label": "양재천벚꽃축제 제안서", "url": "/docs/yangjaecheon-proposal.pdf", "thumbnail": "/images/yangjaecheon-proposal-thumb.jpg" },
           { "label": "양재천벚꽃등축제 결과보고서", "url": "/docs/yangjaecheon-festival-report.pdf", "thumbnail": "/images/yangjaecheon-report-thumb.jpg" },
           { "label": "서천해양레저페스타 운영기획안", "url": "/docs/seocheon-operation-plan.pdf", "thumbnail": "/images/seocheon-plan-thumb.jpg" }
         ],
